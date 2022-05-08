@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import pymysql
 from django.contrib.messages import constants as messages
+import os
 
 pymysql.install_as_MySQLdb()
 
@@ -84,9 +85,9 @@ WSGI_APPLICATION = 'SaisonAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tweetDB',
-        'USER': 'tweetAdmin',
-        'PASSWORD': 'tweet12345',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASS'),
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'TIME_ZONE': 'Asia/Kolkata',
