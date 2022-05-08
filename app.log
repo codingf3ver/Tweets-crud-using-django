@@ -1,0 +1,3 @@
+2022-05-08 18:40:02,599 INFO  tweetsAPI.views.create_user User has created successfully.
+2022-05-08 18:53:12,385 INFO  tweetsAPI.views.create_tweet Your tweet has been posted successfully.
+2022-05-08 19:00:26,287 INFO  tweetsAPI.views.delete_tweet user's viratkh8 tweet has been deleted successfully.
